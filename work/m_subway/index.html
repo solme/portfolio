@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브웨이</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <div class="cover"></div>
+    <div class="popup">
+        <a href="#"><img src="images/20211104030123978.png" alt="팝업이미지"></a>
+        <form action="">
+            <fieldset>
+                <legend>팝업창</legend>
+                <p>
+                    <input type="checkbox" name="today_close">
+                    <label for="">오늘 하루 그만보기</label>
+                </p>
+                <input class="popup_close" type="button" value="닫기">
+            </fieldset>
+        </form>
+    </div>
+  
+    <div class="header">
+
+        <h1><a href="index.html"><img src="images/logo_app.png" alt="서브웨이로고"></h1></a>
+        <button class="menu"><img src="images/icon_asidemenu.png" alt="전체메뉴"></button></a>
+    </div>
+
+    <!-- ---모바일메뉴--- -->
+    <div class="m_menu">
+        <div class="m_header">
+            <h2><a href="#"><img src="images/logo_sidemenu.png" alt=""></a></h2>
+            <ul class="util">
+                <li><a href="#">설정</a></li>
+                <li class="m_menu_close"><a href="#">닫기</a></li>
+            </ul>
+            <p>로그인 해주세요.<br>아직 회원이 아니신가요?</p>
+            <div class="login_wrap">
+                <button class='login'>로그인</button>
+                <button class='join'>회원가입</button>
+            </div>
+        </div>
+        <div class="icon_menu_wrap">
+            <ul class="icon_menu">
+                <li><a href="#"><img src="images/quick_01_fast.png" alt="FAST-SUB">
+                        <h3>FAST-SUB</h3>
+                    </a></li>
+                <li><a href="#"><img src="images/quick_02_home.png" alt="FAST-SUB">
+                        <h3>MOME-SUB</h3>
+                    </a></li>
+                <li><a href="#"><img src="images/quick_03_group.png" alt="FAST-SUB">
+                        <h3>단체주문</h3>
+                    </a></li>
+                <li><a href="#"><img src="images/quick_04_subcard.png" alt="FAST-SUB">
+                        <h3>써브카드</h3>
+                    </a></li>
+                <li><a href="#"><img src="images/quick_06_coupon.png" alt="FAST-SUB">
+                        <h3>쿠폰</h3>
+                    </a></li>
+                <li><a href="#"><img src="images/quick_05_gift.png" alt="FAST-SUB">
+                        <h3>e-Gift</h3>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="m_gnb_wrap">
+            <ul class="m_gnb">
+                <li>
+                    <a href="#">
+                        메뉴소개
+                        <ul class="depth2">
+                            <li><a href="#">샌드위치</a></li>
+                            <li><a href="#">랩 · 기타</a></li>
+                            <li><a href="#">샐러드</a></li>
+                            <li><a href="#">아침메뉴</a></li>
+                            <li><a href="#">스마일 썹</a></li>
+                            <li><a href="#">단체메뉴</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        이용방법
+                        <ul class="depth2">
+                            <li><a href="#">서브웨이 이용방법</a></li>
+                            <li><a href="#">단체메뉴 이용방법</a></li>
+                            <li><a href="#">신선한 재료 소개</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        새소식
+                        <ul class="depth2">
+                            <li><a href="#">이벤트 · 프로모션</a></li>
+                            <li><a href="#">뉴스 · 공지사항</a></li>
+                            <li><a href="#">광고영상</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        서브웨이
+                        <ul class="depth2">
+                            <li><a href="#">서브웨이 역사</a></li>
+                            <li><a href="#">서브웨이 약속</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        가맹점
+                        <ul class="depth2">
+                            <li><a href="#">써브웨이 프랜차이즈</a></li>
+                            <li><a href="#">가맹관련 FAQ</a></li>
+                            <li><a href="#">지사안내</a></li>
+                            <li><a href="#">사업설명회(대표번호 02-797-5036)</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        고객센터
+                        <ul class="depth2">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="main">
+        <!-- Slider main container -->
+        <div class="swiper main_slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/main_Mobile_640x680_20211029104715486.jpg" alt="메인슬라이드이미지1">
+                </div>
+                <div class="swiper-slide"><img src="images/main_Mobile_640x680_20211029104557706.jpg" alt="메인슬라이드이미지2">
+                </div>
+                <div class="swiper-slide"><img src="images/main_Mobile_640x680_20210903062030408.jpg" alt="메인슬라이드이미지3">
+                </div>
+                <div class="swiper-slide"><img src="images/main_Mobile_640x680_20201006040046990.jpg" alt="메인슬라이드이미지4">
+                </div>
+                <div class="swiper-slide"><img src="images/main_Mobile_640x680_20210928042009163.jpg" alt="메인슬라이드이미지5">
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <!-- --------------주문영역 -->
+        <div class="order">
+            <ul class="order_list">
+                <li><a href="#">
+                        <h2>FAST-SUB</h2>
+                        <h3>매장선주문</h3>
+                        <img src="images/img_fastsub.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <h2>HOME-SUB</h2>
+                        <h3>배달주문</h3>
+                        <img src="images/img_homesub.png" alt="">
+                    </a></li>
+            </ul>
+        </div>
+
+
+        <!-- ---------------슬라이드 탭------------ -->
+        <div class="slide_tab">
+            <h2>Subway's Menu</h2>
+            <ul class="btn_tab">
+                <li class='on'><a href="#">클래식</a></li>
+                <li><a href="#">플래쉬&라이트</a></li>
+                <li><a href="#">프리미엄</a></li>
+                <li><a href="#">아침메뉴</a></li>
+            </ul>
+
+            <div class="product_wrap">
+                <!-- --------------------제품 슬라이드 클래식-->
+                <div class="swiper product_slide">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_cl01.jpg" alt="이탈리안 비엘티 이미지">
+                                <h3>이탈리안 비엘티</h3>
+                                <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! 전세계가 사랑하는 써브웨이의 베스트셀러! Biggest Meatiest Tastiest, its’
+                                    B.M.T!</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_cl02.jpg" alt="비엘티 이미지">
+                                <h3>비엘티</h3>
+                                <p>오리지널 아메리칸 스타일 베이컨의<br>풍미와 바삭함 그대로</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_cl03.jpg" alt="미트볼 이미지">
+                                <h3>미트볼</h3>
+                                <p>이탈리안 스타일 비프 미트볼에<br>써브웨이만의 풍부한 토마토 향이 살아있는 마리나라소스를 듬뿍</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_cl06.jpg" alt="에그마요 이미지">
+                                <h3>에그마요</h3>
+                                <p> 부드러운 달걀과 고소한 마요네즈가 만나<br>
+                                    더 부드러운 스테디셀러</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <!-- --------------------제품 슬라이드 프레시라이트-->
+                <div class="swiper product_slide slide2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_fl01.jpg" alt="로티세리 바비큐치킨">
+                                <h3>로티세리 바비큐 치킨</h3>
+                                <p>촉촉한 바비큐 치킨의 풍미가득.<br>
+                                    손으로 찢어 더욱 부드러운 치킨의 혁명 </p>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_fl02.jpg" alt="로스트 치킨">
+                                <h3>로스트 치킨</h3>
+                                <p>오븐에 구워 담백한 저칼로리<br>닭가슴살의 건강한 풍미</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_fl04.jpg" alt="써브웨이 클럽">
+                                <h3>써브웨이 클럽</h3>
+                                <p>명실공히 시그니처 써브!<br>터키, 햄, 베이컨의 완벽한 앙상블</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/sandwich_fl05.jpg" alt="터키">
+                                <h3>터키</h3>
+                                <p> 280kcal로 슬림하게 즐기는<br>
+                                    오리지날 터키 샌드위치</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <!-- --------------------제품 슬라이드 프리미엄-->
+
+                <div class="swiper product_slide slide2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_pm10.jpg" alt="쉬림프">
+                                <h3>쉬림프</h3>
+                                <p> 탱글한 식감이 그대로 살아있는 통새우가<br>
+                                    5마리 들어가 한 입 베어 먹을 때 마다<br>
+                                    진짜 새우의 풍미가 가득 </p>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_pm08.jpg" alt="폴드 포크 바비큐">
+                                <h3>폴드 포크 바비큐</h3>
+                                <p>훈연한 미국 정통 스타일의 리얼 바비큐 풀드포크가 들어간 샌드위치</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_pm01.jpg" alt="스테이크&치즈">
+                                <h3>스테이크&치즈</h3>
+                                <p>육즙이 쫙~<br>풍부한 비프 스테이크의 풍미가 입안 한가득</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/sandwich_pm02.jpg" alt="터키 베이컨 아보카도">
+                                <h3>터키 베이컨 아보카도</h3>
+                                <p> 담백한 터키와 바삭한 베이컨 환상조합에<br>
+                                    부드러운 아보카도는 신의 한수</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <!-- --------------------제품 슬라이드 프레시라이트-->
+
+                <div class="swiper product_slide slide2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_bf01.jpg" alt="햄, 에그&치즈">
+                                <h3>햄, 에그&치즈</h3>
+                                <p>푹신한 오믈렛과 햄의 가장 클래식한 조화 </p>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_bf02.jpg" alt="웨스턴, 에그&치즈">
+                                <h3>웨스턴, 에그&치즈</h3>
+                                <p>토마토, 피망, 양파 세가지 야채가 더해져<br>더욱 신선한 하루 시작</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"><a href="">
+                                <img src="images/sandwich_bf03.jpg" alt="베이컨,  에그&치즈">
+                                <h3>베이컨, 에그&치즈</h3>
+                                <p>오리지널 아메리칸 스타일 베이컨으로<br>더욱 풍성한 아침 식사</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href=""><img src="images/sandwich_bf04.jpg" alt="스테이크,  에그&치즈">
+                                <h3>스테이크, 에그&치즈</h3>
+                                <p> 육즙 가득 비프 스테이크로<br>
+                                    든든한 아침 식사</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <!-- -------------------------------제품 슬라이드 끝 -->
+            </div>
+            <!--product_wrap-->
+
+
+
+        </div>
+        <!--slide tab-->
+
+
+        <!-----------------공지사항 -->
+        <div class="section1">
+            <h2>What's NEW</h2>
+            <a href="#" class="btn_more"><img src="images/btn_more.png" alt="더보기이미지"></a>
+            <ul class="list">
+                <li><a href="#">서브웨이와 함께하는 Mnet '쇼미더머니10' 쇼미더 머니 특별전가이드에 함께가고싶은 친구를 댓글로 소환하여 서브웨이 먹기</a></li>
+                <li><a href="#">써브웨이와 함께하는 SBS 금토드라마 "지금헤어지는중입니다" </a></li>
+                <li><a href="#">로스트 치킨, 로티세리 바비큐 치킨 판매 재개 안내</a></li>
+            </ul>
+        </div>
+
+
+        <ul class="quick">
+            <li class=mj_search><a href="#">매장찾기</a></li>
+            <li class="gamang"><a href="#">가맹신청·문의</a></li>
+        </ul>
+    </div>
+    <!--main-->
+
+    <div class="section">
+        <ul class="quick_menu">
+            <li><a href="#">프랜차이즈</a></li>
+            <li><a href="#">광고영상</a></li>
+            <li><a href="#">지사안내</a></li>
+            <li><a href="#">1:1 문의</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <ul class="footer_util">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">Subway Listens</a></li>
+            <li><a href="#">PC버전</a></li>
+        </ul>
+
+        <ul class="sns">
+            <li><a href="#">인스타그램</a></li>
+            <li><a href="#">페이스북</a></li>
+        </ul>
+
+        <address>
+            서울시 서초구 강남대로 535 프린스빌딩 15층<br>
+            대표 : 콜린클락 전화 : 02-797-5036<br>
+            사업자등록번호 : 101-84-04143
+        </address>
+        <p class="copyright">
+            SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
