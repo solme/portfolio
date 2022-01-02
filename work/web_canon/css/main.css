@@ -86,6 +86,30 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #header .header_inner .header_bottom{width: 100%; height: 46px; position: relative;}
 
 #header .header_inner .header_bottom .cover{width: 100%;height: 0; background:#f9f9f9; position: absolute; top: 46px;left: 0; z-index: 100;}
+#header .header_inner .header_bottom .cover .cover_inner{width: 100%; height: 310; padding:20px 10px 20px 20px;; box-sizing: border-box; display: none;}
+#header .header_inner .header_bottom .cover .depth2_left{float: left;}
+#header .header_inner .header_bottom .cover .depth2_right{float: right;width: 860px; background: #f9f9f9; padding-top:30px;}
+#header .header_inner .header_bottom .cover .depth2_right li {float: left; width: 108px; height: 93px; text-align: center; margin-right:15px; box-sizing: border-box;}
+#header .header_inner .header_bottom .cover .depth2_right li.on{border-bottom: 1px solid #de2b31; }
+#header .header_inner .header_bottom .cover .depth2_right li.on a{color:#de2b31;}
+#header .header_inner .header_bottom .cover .depth2_right li:nth-child(7) {margin-right:0}
+.depth2_right li:nth-child(8),.depth2_right li:nth-child(9),.depth2_right li:nth-child(10),.depth2_right li:nth-child(11),.depth2_right li:nth-child(12){margin-top:45px;}
+#header .header_inner .header_bottom .cover .depth2_right li a {display: block;height: 67px; padding:70px 0 20px 0;  box-sizing: border-box; text-align: center; font-size:13px; color:#747474;}
+
+.depth2_right .pdut_01{ height: 57px;background: url("../images/lnb_prod_bg01.png")no-repeat center top;}
+.depth2_right .pdut_02{ height: 57px;background: url("../images/lnb_prod_bg02.png")no-repeat center top;}
+.depth2_right .pdut_03{ height: 57px;background: url("../images/lnb_prod_bg03.png")no-repeat center top;}
+.depth2_right .pdut_04{ height: 57px;background: url("../images/lnb_prod_bg04.png")no-repeat center top;}
+.depth2_right .pdut_05{ height: 57px;background: url("../images/lnb_prod_bg05.png")no-repeat center top;}
+.depth2_right .pdut_06{ height: 57px;background: url("../images/lnb_prod_bg06.png")no-repeat center top;}
+.depth2_right .pdut_07{ height: 57px;background: url("../images/lnb_prod_bg07.png")no-repeat center top;}
+.depth2_right .pdut_08{ height: 57px;background: url("../images/lnb_prod_bg08.png")no-repeat center top;}
+.depth2_right .pdut_09{ height: 57px;background: url("../images/lnb_prod_bg09.png")no-repeat center top;}
+.depth2_right .pdut_10{ height: 57px;background: url("../images/lnb_prod_bg10.png")no-repeat center top;}
+.depth2_right .pdut_11{ height: 57px;background: url("../images/lnb_prod_bg11.png")no-repeat center top;}
+.depth2_right .pdut_12{ height: 57px;background: url("../images/lnb_prod_bg12.png")no-repeat center top;}
+
+
 
 #header .header_inner .header_bottom .gnb {float: left;  margin-left:15px;}
 #header .header_inner .header_bottom .gnb li{float:left;margin-right: 60px;}

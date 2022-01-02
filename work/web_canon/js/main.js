@@ -3,15 +3,26 @@ $(function(){
     // --------------헤더 메뉴
     $('.cover1').mouseenter(function(){
         $('.cover').stop().animate({'height':312},400);
+        $('.cover_inner').stop().slideDown();
         
         
     });
 
     $('.cover1').mouseleave(function(){
         $('.cover').stop().animate({'height':0},400);
-      
+        $('.cover_inner').stop().slideUp();
     });
 
+
+// 헤더 제품지원 2단메뉴
+    $('.depth2_right li').mouseenter(function(){
+    $(this).addClass("on").siblings().removeClass('on')
+
+    });
+
+    $('.depth2_right li').mouseleave(function(){
+        $('.depth2_right li').removeClass('on')
+    });   
 
 //-------------------- 팝업 검색창
 //헤더 돋보기 클릭
