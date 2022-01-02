@@ -43,7 +43,7 @@ body{font-family: 'Roboto','SCoreDream'; position: relative;}
 .gnb >.g_design{margin-left:130px;}
 .gnb >.g_con{margin-left:190px; }
 /* background: url("../images/gnb_line.png")no-repeat 26% center; */
-@keyframes gnb_ani{
+/* @keyframes gnb_ani{
   0%{transform: rotate(90deg); top: 0; right:-290px; }
   100%{transform: rotate(0deg);top: -360px; right:-290px;}
 } 
@@ -52,7 +52,7 @@ body{font-family: 'Roboto','SCoreDream'; position: relative;}
   0%{transform: rotate(0deg);top: 0;right:-290px; }
   100%{transform: rotate(45deg); top: -760px; right:-290px;}
 }
-
+ */
 
 
 /*------------------- 공통 work ~ contact */
@@ -81,7 +81,7 @@ body{font-family: 'Roboto','SCoreDream'; position: relative;}
 .home_p .intro h1, .home_p .intro h2{ font-weight: 500; color: #fff; overflow: hidden; white-space: nowrap;position: absolute;top: 50%;left: 50%; transform: translate(-50%,-50%); margin-top:-100px;margin-left:-100px;z-index: 10;}
 .home_p .intro h1{font-size:70px;  animation: type 1s steps(8); }
 .home_p .intro h2{font-size:60px;  animation: type 1s 1s steps(9),ani_fade 1s 1s forwards; opacity: 0; margin-top:0;margin-left:30px;}
-.name_bg{width: 200px;height: 300px; background: rgba(255,255,255,0.1); position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%); margin-left:-270px; margin-top:-190px; border-radius: 20px;transform: rotate(-25deg);z-index: 5; }
+.name_bg{width: 200px;height: 300px; background: rgba(255,255,255,0); position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%); margin-left:-270px; margin-top:-190px; border-radius: 20px;transform: rotate(-25deg);z-index: 5; animation: ani_bg_fade 1.5s 1s forwards;}
 /* box-shadow:2px 2px 15px rgba(255,255,255,0.3); */
 .home_p .intro .img_ani{width: 100%;}
 .home_p .intro .img_ani div {position: relative;}
@@ -100,6 +100,10 @@ body{font-family: 'Roboto','SCoreDream'; position: relative;}
 
 
 /* 기본 페이드인 */
+@keyframes ani_bg_fade{
+  0%{ background: rgba(255,255,255,0);}
+  100%{ background: rgba(255,255,255,0.1);}
+}
 @keyframes ani_fade{
   0%{opacity: 0;}
   100%{opacity: 1;}
