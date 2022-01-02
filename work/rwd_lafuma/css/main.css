@@ -1,0 +1,211 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body{font-family: 'Roboto', 'Noto Sans KR', sans-serif; min-width: 320px; overflow-x: hidden; }
+
+
+/* ------모바일메뉴 */
+.m_menu, .m_mall{display: none;}
+.m_menu_wrap{display: none;}
+
+/* -------------------------------헤더 */
+#header{width: 100%; position: relative;;}
+#header .header_inner{width: 950px; height: 70px;  margin:0 auto; position: relative;} 
+
+/* -------로고 */
+#header .header_inner h1{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+#header .header_inner h1 a{display: block; width: 116px;height: 22px; background: url("../images/logo.png")no-repeat; text-indent: -99999px;}
+
+/* -------1단메뉴 */
+#header .header_inner .gnb{width: calc(100% - 116px); position: absolute; top: 50%;right: 0; transform: translateY(-50%); z-index: 20;}
+#header .header_inner .gnb> li{float: left; margin-left:40px;  position: relative; }
+
+#header .header_inner .gnb> li> a{display: block; line-height: 70px; font-size:16px; color:#777;}
+#header .header_inner .gnb> li:last-child a{text-indent:-99999px; width: 76px; height: 70px; background: url("../images/btn_lf_ot.png")no-repeat right center;}
+
+
+/* -------2단메뉴 */
+#header .header_inner .gnb> li> .depth2{width: 200px;  position: absolute; left: 50%; transform: translateX(-50%); top: 70px; background: #f17424 url("../images/sub_cur.png")no-repeat center top; text-align: center; padding:28px 0;box-sizing: border-box; display: none; }
+#header .header_inner .gnb> li> .depth2 li{line-height: 32px;;}
+#header .header_inner .gnb> li> .depth2 li a{display: block; color:#fff;font-size:12px;}
+#header .header_inner .gnb> li> .depth2 li:hover a{text-decoration: underline;}
+
+
+
+
+
+
+
+
+/* 메인 슬라이드 */
+/* padding-top : calc (895 / 1810 * 100 %);  */
+
+main .visual div a{display:block; width: 100%; height : 0; padding-top: calc( 895 / 1810 * 100%);}
+main .visual1 a{background: url("../images/visual_c.jpg")no-repeat center top;background-size: 98% auto; } 
+main .visual2 a{width: 100%; height: auto; background: url("../images/visual_d.jpg")no-repeat center top; background-size: 98% auto;} 
+
+
+main .visual .slick-arrow{width: 50px; height: 50px; position: absolute; top: 50%; transform: translateY(-50%);border:none;z-index: 10;text-indent: -99999px; cursor: pointer;}
+main .visual .slick-prev{ left: 50%; margin-left:-840px; background: url("../images/btn_left.png")no-repeat;}
+main .visual .slick-next{right: 50%; margin-right:-840px; background: url("../images/btn_right.png")no-repeat; }
+
+main .visual .slick-dots{position: absolute; left: 50%; transform: translateX(-50%); bottom:-20px; cursor: pointer;}
+main .visual .slick-dots li{float: left; margin-right:5px;}
+main .visual .slick-dots li button{width: 60px;height: 5px; background: #000; border: none; text-indent: -99999px;}
+main .visual .slick-dots .slick-active button{background: #f17424;}
+
+
+main .txt{text-align: center; padding-top: 60px;}
+main .txt h2{font-size:18px; color:#000; padding-bottom:30px;}
+main .txt p{font-size:15px; color:#666; line-height: 23px;}
+main .txt .show{display: none;}
+main .txt p span{font-weight: bold;}
+
+/* ------------------ collect박스 */
+main .collect{width: 98%;border-top:10px solid #f17424; margin:43px auto 0; overflow: hidden;  }
+main .collect div{float: left; position: relative; }
+
+main .collect .photo1, main .collect .photo2{width: 50%;}
+main .collect .photo1 img, main .collect .photo2 img{width: 100%;}
+main .collect .photo3, main .collect .photo4, main .collect .photo5{width: 33.333%; margin-top:-3px;}
+main .collect .photo3 img, main .collect .photo4 img, main .collect .photo5 img{width: 100%;}
+
+/* -----------list 박스 */
+main .list{width: 100%; text-align: center; background: #ececec; padding:0 50px 50px; box-sizing: border-box; overflow: hidden;}
+main .list h2 {padding:75px 0 45px 0; font-size:27px; box-sizing: border-box;}
+main .list h2 span{color:#ef7337;}
+
+main .list .sns{width: 100%;}
+main .list .sns li{width: 25%; float: left; margin-top:-3px;position: relative;}
+main .list .sns li img{width: 100%;}
+main .list .sns li .cover{width: 100%;position: absolute; top: 0;left: 0; display: none;}
+main .list .sns li .cover img{width: 100%;}
+
+main .m_list{display: none;}
+
+
+/* footer */
+footer{width: 100%; height: 120px; padding:35px 50px; box-sizing: border-box; position: relative;}
+
+footer .util{}
+footer .util li{float: left; padding:0 10px; position: relative;}
+footer .util li::before{content:''; width: 5px;height: 5px; background:url("../images/dot.png")no-repeat left center; position: absolute; top: 50%;left: 0; transform: translateY(-50%); }
+footer .util a{font-size:14px; color:#666;}
+footer p{clear: both; font-size: 12px; color:#888; padding-top:18px;}
+
+footer .util2{position: absolute; right: 50px;top: 30px;}
+footer .util2 .f_mark{display: block; font-size:12px; color:#000; position: relative;float:left; margin:8px 15px 0 0; }
+footer .util2 .f_mark::before{content: '';width: 20px;height: 15px; background: url("../images/france.jpg")no-repeat; position: absolute;top: 50%; transform: translateY(-50%); left:-25px;}
+
+footer .util2 .btn_f{width: 155px; height: 30px; border:1px solid #333; background: #fff; text-align: left; text-indent: 10px;font-size: 12px;position: relative; cursor: pointer; float: left;}
+footer .util2 .btn_f::before{content: ''; width: 35px; height: 25px; background: url("../images/btn_select.png")no-repeat; position: absolute; top: 50%; right: 0; transform: translateY(-50%); }
+
+footer .util2 .f_list{position: absolute; right: 0;bottom: 30px;width: 155px; box-sizing: border-box; background: #fff; border:1px solid #333; display: none;}
+footer .util2 .f_list li{}
+footer .util2 .f_list li a{display:block; width: 100%; height: 35px; font-size: 11px; text-indent:11px; color:#4b4e55;padding-top:10px;}
+footer .util2 .f_list li a:hover{background: #eee;}
+
+
+
+/* -----------------------------------------------모바일 기기---------------------------------------------- */
+
+@media screen and ( max-width : 767px ) {
+
+  .cover{width: 100%;height: 100%;background: rgba(0,0,0,0.7); position: absolute; top: 0;left: 0; z-index: 50; display: none;}
+  /* calc(100% - 120px); */
+ /* ---------모바일메뉴    */
+ .m_menu_wrap{display:block; width: calc(100% - 120px); height: 100%; background: #fff;position: fixed; top: 0;left: -100%; z-index: 100; }
+ .m_menu_wrap h2{width: 100%; height: 45px; background: #333; text-align: center;position: relative;}
+ .m_menu_wrap h2 a{display: block; width: 115px; height: 23px; background: url("../images/m_logo.png")no-repeat; background-size: 115px 23px;text-indent: -99999px; position: absolute; top: 50%;left: 50%; transform: translate(-50%,-50%);}
+
+ .m_menu_wrap .m_gnb{width: 100%;}
+ .m_menu_wrap .m_gnb >li{}
+ .m_menu_wrap .m_gnb > li> a{display: block; width: 100%; height: 45px; border-bottom: 1px solid #ccc; font-weight: bold; color:#222; text-align: center; line-height: 45px;background: #eee;}
+ .m_menu_wrap .m_gnb > .dep0> a {background: #eee url("../images/m_menu_down.png")no-repeat 70% center; background-size: 7px 5px;}
+.m_menu_wrap .m_gnb > .dep0.on> a{background: #eee url("../images/m_menu_up.png")no-repeat 70% center; background-size: 7px 5px;}
+/* 모바일 2단메뉴 */
+
+.m_menu_wrap .m_gnb > li> .depth2{width: 100%; overflow: hidden; display: none;}
+.m_menu_wrap .m_gnb > li> .depth2 li{width: 50%;float: left;padding:35px 0;text-align: center; box-sizing: border-box; position: relative; border-bottom:1px solid #ccc;}
+.m_menu_wrap .m_gnb > li> .depth2 li::before{content:''; width: 1px; height: 67px;  position: absolute; top: 50%; right: 0; background: #ccc; transform: translateY(-50%);}
+.m_menu_wrap .m_gnb > li> .depth2 a{ width: 100%; font-size:14px; color:#222; padding-left: 20px;}
+
+.m_menu_wrap .m_gnb > li> .depth2 li a img{width: 17px; vertical-align: middle;}
+.m_menu_wrap .m_gnb > li> .depth2 li a span{vertical-align: middle;}
+
+/* 모바일메뉴 아이콘 */
+.m_menu_wrap .m_gnb > li> .depth2 li .ico_id{background: url("../images/m_identity.png")no-repeat left center; background-size: 13px; }
+.m_menu_wrap .ico_his{background: url("../images/m_history.png")no-repeat left center; background-size: 13px;  }
+.m_menu_wrap .ico_boy{background: url("../images/m_boy.png")no-repeat left center;background-size: 13px; }
+.m_menu_wrap .ico_girl{background: url("../images/m_girl.png")no-repeat left center; background-size: 14px; }
+.m_menu_wrap .ico_kids{background: url("../images/m_kids.png")no-repeat left center; background-size: 18px;}
+.m_menu_wrap .ico_sho{background: url("../images/m_shoes.png")no-repeat left center; background-size: 16px;}
+.m_menu_wrap .ico_yp{background: url("../images/m_gloves.png")no-repeat left center; background-size: 14px 26px ;}
+.m_menu_wrap .ico_cp{background: url("../images/m_icon_camping.png")no-repeat left center; background-size: 17px;}
+.m_menu_wrap .ico_fr{background: url("../images/m_fresh.png")no-repeat left center; background-size: 16px;}
+.m_menu_wrap .ico_rhy{background: url("../images/m_rhythm.png")no-repeat left center; background-size: 16px;}
+.m_menu_wrap .ico_sear{background: url("../images/m_search.png")no-repeat left center; background-size: 16px;}
+.m_menu_wrap .ico_open{background: url("../images/m_store.png")no-repeat left center; background-size: 16px;}
+.m_menu_wrap .ico_face{background: url("../images/m_facebook.png")no-repeat left center; background-size: 18px;}
+.m_menu_wrap .ico_blog{background: url("../images/m_blog.png")no-repeat left center; background-size: 18px;}
+
+
+
+ /* ------------헤더 */
+#header .header_inner{width: 100%; height: 45px;  margin:0 auto; position: relative;} 
+#header .header_inner h1{ left: 50%; top: 50%; transform: translate(-50%,-50%);}
+#header .header_inner .gnb{display: none;}    
+.m_menu, .m_mall{display: block; text-indent: -99999px;position: absolute; top: 50%; transform: translateY(-50%); z-index: 30;}
+.m_menu{width: 23px; height: 19px;background: url("../images/m_menu.png")no-repeat; background-size: 23px 19px; left:0; margin-left:15px;}
+.m_mall{width: 22px; height: 25px;background: url("../images/m_mall.png")no-repeat; background-size: 22px 25px; right: 0; margin-right:15px;}
+
+main .visual{width: 100%;position: relative;}
+main .visual div a {width: 100%;display:block; width: 100%; height : 0; padding-top: calc( 526 / 700 * 100%); }
+main .visual .visual1 a{background: url("../images/m_visual_c.jpg")no-repeat center top; background-size: 100%; } 
+main .visual .visual2 a{background: url("../images/m_visual_d.jpg")no-repeat center top;background-size: 100%;} 
+
+
+
+
+
+/* -------------------모바일 collect 박스 */
+main .collect{width: 100%;border-top:10px solid #f17424; margin-top:43px; overflow: hidden; }
+main .collect div{float: left; position: relative; }
+
+main .collect .photo1, main .collect .photo2{width: 100%; margin-top:-3px;}
+main .collect .photo1 img, main .collect .photo2 img{width: 100%;}
+main .collect .photo3{width: 100%;}
+main .collect .photo4, main .collect .photo5{width: 50%; margin-top:-3px;}
+
+main .collect .photo4 img, main .collect .photo5 img{width: 100%;}
+
+
+/* 모바일 list박스 */
+
+main .show{display: block;}
+main .hide{display: none;}
+
+/* 모바일 sns 박스 sns리스트 숨기고 footer util 넣기 */
+main .list{display: none;}
+
+/* ------- m_footer util ------ */
+
+main .m_list{display: block; width: 100%;}
+main .m_list li{width: 100%; border-bottom:1px solid #ccc;}
+main .m_list li a{display: block;width: 100%; height: 50px; line-height: 50px; padding:0 20px;box-sizing: border-box; font-size:13px; color:#555; position: relative;}
+main .m_list li a::before{content:''; width: 11px;height: 20px; background: url("../images/m_arrow.gif")no-repeat; position: absolute; top: 50%; right: 20px;transform: translateY(-50%);}
+
+/* ---------------m_footer */
+footer{height: 175px; background: #eee;}
+footer .util{display: none;}
+footer .util2 .f_mark{margin-left: 50px;}
+footer .util2 .btn_f{margin-top:10px;}
+footer p{text-align: center; margin-top:70px;}
+
+
+footer .util2 {width: 155px; left: 50%; top:50%; transform: translate(-50%,-50%);}
+footer .util2 .f_list li a{display:block; width: 100%; height: 35px; font-size: 11px; text-indent:11px; color:#4b4e55;padding-top:10px;}
+footer .util2 .f_list li a:hover{background: #eee;}
+
+}
