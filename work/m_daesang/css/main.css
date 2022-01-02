@@ -1,0 +1,54 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+a{text-decoration: none;}
+
+body{}
+#header{width: 100%; height: 70px; border-bottom:1px solid rgba(255,255,255,0.5);position: fixed; left:0;top: 0; z-index: 10; }
+#header h1{position: absolute; left: 25px; top: 50%; transform: translateY(-50%);}
+#header h1 a{display:block;width: 189px; height: 68px;background:url("../images/logo.png")no-repeat; text-indent: -99999px;}
+
+#header .m_btn{position: absolute; right: 25px; top: 50%; transform: translateY(-50%);}
+#header .m_btn span{display: block; width: 31px; height: 2px; background: #fff; }
+#header .m_btn span:not(:last-child){margin-bottom: 8px;}
+
+#main .swiper{width: 100%; height: 100vh;position: relative;}    
+/* vh->모니터에 맞게 한 화면 잡을떄 */
+
+
+#main .swiper .section1{  width: 100%; height: 100vh; background:url("../images/bg_section_01.jpg")no-repeat; background-size: cover;}
+
+
+
+/* 공통 */
+#main .section0 .btn_next{display:block; position: absolute; bottom:40px; left: 50%; transform: translateX(-50%);font-size: 12px; color:#fff; padding-bottom:10px;}
+#main .section0 .btn_next img{position: absolute; left: 50%; transform: translateX(-50%); top: 20px;}
+#main .swiper .section0 .section_inner{position: absolute;top: 50%;left: 50%; transform: translate(-50%,-50%); color:#fff; text-align: center;}
+
+#main .swiper .section0 .section_inner h3{font-size:13.5px;position: relative; padding-bottom:50px;}
+#main .swiper .section0 .section_inner h3::before{content:''; width: 32px;height: 1px; background: #fff; position: absolute; top: 30px;left: 50%; transform: translateX(-50%);} 
+#main .swiper .section0 .section_inner h2{font-size:40px; font-family: 'S-CoreDream-4Regular'; padding-bottom: 25px; line-height: 60px;}
+#main .swiper .section0 .section_inner p{font-size:13.5px; line-height: 20px;}
+
+
+#main .swiper .section2{  width: 100%; height: 100vh; background:url("../images/bg_section_02.jpg")no-repeat; background-size: cover;}
+#main .swiper .section3{  width: 100%; height: 100vh; background:url("../images/bg_section_03.jpg")no-repeat; background-size: cover;}
+
+/* 페이지버튼 커스터마이징 */
+
+#main .swiper-pagination{right:-20px;}
+#main .swiper-pagination .swiper-pagination-bullet{cursor: pointer; width: 10px;height: 10px; background: #fff; margin-bottom: 20px; opacity: 1; } 
+#main .swiper-pagination .swiper-pagination-bullet-active{border-bottom: 1px solid #fff;width: 130px; height: 20px; background:none; border-radius: 0; opacity: 1; text-align: left; padding-bottom:10px;}
+#main .swiper-pagination .swiper-pagination-bullet-active:first-child::before{content:'DAESANG'; color:#fff;}
+#main .swiper-pagination .swiper-pagination-bullet-active:nth-child(2)::before{content:'BUSINESS'; color:#fff;}
+#main .swiper-pagination .swiper-pagination-bullet-active:last-child::before{content:'CSR'; color:#fff;}

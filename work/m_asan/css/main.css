@@ -1,0 +1,109 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+/* 버튼은 기본적으로 border값이 있으므로 초기화 해줘야함 */
+/* cursor:pointer; 마우스 갖다대면 손모양 생기는거 */
+button{border:none; background:none; cursor:pointer;}
+li{list-style: none;}
+a{text-decoration: none;}
+body{background: #f5f5f5;}
+/* position: relative; 제자리에서 움직일때도 사용함 */
+.wrap{position: relative;}
+
+.cover{position: fixed; width: 100%;height: 100%; background:rgba(0,0,0,0.8); z-index: 99; display:none;}
+
+/* 모바일페이지는 width값 무조건 100%  */
+.header{width: 100%;height: 45px; background:#333; position: relative;}
+.header .m_btn{position: absolute;  left:0;  top:0;  width: 45px; height: 45px; background:url("../images/bg_header_lnb.png") no-repeat; background-size: 45px; text-indent: -99999px; }
+.header .m_btn.on{width: 45px; height: 45px; background:url("../images/bg_header_lnb_active.png")no-repeat; background-size: 45px; z-index:500;}
+/* 모바일은 보통 360px 작업이나 대기업은 720px 기준으로 작업함, 
+이미지 사이즈도 2배이므로 작업시 /2 하여 이미지 사이즈기재
+이미지 실사이즈 90*90 이므로 /2값 45기재 */      
+.header .m_btn
+.header .m_btn img{width: 45px; }    
+.header .m_search{position: absolute;  right:0; top:0;}   
+
+/* 검색_wrap */
+.header .search_wrap{position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.8);display: none;}
+.header .search_wrap .btn_close{position: absolute; right: 0;top: 0; width: 45px; height: 45px; text-indent: -99999px;
+    background:url("../images/img_topSerchCancel.png") no-repeat; background-size: 45px;}
+
+.header .search_wrap .search{width: 90%; position: absolute; left: 50%; top:210px; transform: translateX(-50%); border-bottom: 3px solid #fff; }
+.header .search_wrap .search legend{position: absolute; left: -99999px;}
+.header .search_wrap .search fieldset{border:none;}
+.header .search_wrap .search input{width: 80%; height: 30px; background:none; border:none;}
+.header .search_wrap .search .btn_search2{width: 21px; height: 21px; background:url("../images/allSerch.png") no-repeat; background-size: 21px; text-indent: -99999px; float:right;}
+.header .m_search img{width: 45px;}
+.header h1{position: absolute; left:50%;  top:50%; transform: translate(-50%,-50%);}
+.header h1 img{width: 90px;}
+
+/* 모바일메뉴 */
+.header .gnb_wrap{width: 278px; height: 100%;background:#f1f1f1; position: fixed; left: -278px; top: 0; z-index: 100;}
+.header .gnb_wrap .login{background:#111; padding: 40px 20px;}
+.header .gnb_wrap .login .btn_close{position: absolute; right: 0; top: 0;}
+.header .gnb_wrap .login .btn_close img{width: 45px;}
+.header .gnb_wrap .login p{color:#fff; line-height:20px; font-size:15px; margin-bottom: 25px; box-sizing: border-box;}
+.header .gnb_wrap .login a img{width: 232px;}
+.header .gnb_wrap .gnb li a img{width: 274px;}
+.header .gnb_wrap .gnb li a:last-child{border-bottom: 1px solid #ddd;}
+.header .gnb_wrap .reserve{margin-top:40px; text-align: center;}
+.header .gnb_wrap .reserve a img{width: 235px;}
+
+/* 메인영역 */
+.main .visual img{width: 100%;}
+.main .visual .swiper .swiper-button-prev{color:rgba(255,255,255,0.5);}
+.main .visual .swiper .swiper-button-next{color:rgba(255,255,255,0.5);}
+.main .visual .swiper .swiper-pagination-bullet-active {swiper-theme-color:#fff;}
+
+/* section */
+.section{width: 100%;  padding:20px 12px; box-sizing: border-box; background: #fff;}
+.section .quick_menu{overflow:hidden;}
+.section .quick_menu li{float:left; width: 50%; margin-bottom:10px;box-sizing: border-box; }
+.section .quick_menu li a{display: block; width: 100%; line-height: 22px;color:#fff;font-size: 16px; box-sizing: border-box;letter-spacing: -2px;}
+.section .quick_menu li a span{font-weight: bold;}
+.section .quick_menu li:nth-child(1) a{height: 100px; padding:30px 7px 6px 10px; background: #4ab8bc url("../images/bg_docSearch.png")no-repeat 90% 90%; background-size:30%; }
+.section .quick_menu li:nth-child(2) a{height: 100px; padding:30px 7px 6px 10px; background: #ff912f url("../images/bg_reserve.png")no-repeat 90% 90%; background-size:30%;}
+.section .quick_menu li:nth-child(3) a{height: 60px; padding:20px 7px 6px; background: #589dd2 url("../images/bg_schedule.png")no-repeat 95% center; background-size:20%;}
+.section .quick_menu li:nth-child(4) a{height: 60px; padding:20px 7px 6px; background: #8dca35 url("../images/bg_health.png")no-repeat 95% center;background-size:23%;}
+
+.section .quick_menu li:nth-child(2n){padding-left:10px;}
+.section .quick_menu li:nth-child(n+3){margin-bottom: 0;}
+
+.section2{width: 100%; padding:20px 10px; box-sizing: border-box;}
+.section2 .info {width: 100%;}
+.section2 .info li{float: left; display: inline-block; padding-right:15px; box-sizing: border-box;}
+.section2 .info li a {display:block; width: 100%; font-size:14px; text-align: center; color:#333; font-weight: bold;}
+.section2 .info li a .bg_img{display:block; width:82px;height: 82px;border:1px solid #ccc; border-radius: 50px; text-align: center;}
+
+.section2 .info li a .ico1{background:#fafafa url("../images/ico_map.png")no-repeat center center; background-size:72px;}
+.section2 .info li a .ico2{background:#fafafa url("../images/ico_parking.png")no-repeat center center; background-size:72px;}
+.section2 .info li a .ico3{background:#3ec591 url("../images/ico_door.png")no-repeat center center; background-size:72px;}
+.section2 .info li a .ico4{background:#fafafa url("../images/ico_tel.png")no-repeat center center; background-size:72px;}
+.section2 .info li a .ico5{background:#fafafa url("../images/ico_around.png")no-repeat center center; background-size:72px;}
+.section2 .info li a .ico6{background:#fafafa url("../images/ico_visit.png")no-repeat center center; background-size:72px;}
+
+/* ----------footer */
+.footer{width: 100%;background: #222; padding:15px 10px; overflow: hidden; box-sizing: border-box;}
+.footer .footer_menu{width: 100%; }
+.footer .footer_menu li {float: left; width: 32.5%; height: 32px; background:#3c3d42; 
+border-left:1px solid #28292c; border-right:1px solid #5f6064}
+.footer .footer_menu li:last-child{border-right:none;}
+.footer .footer_menu li:first-child{border-left:none;}
+.footer .footer_menu li a{display: block; color:#fff; font-size: 12px; text-align: center; line-height: 32px;}
+.footer .info2{width: 100%; overflow:hidden;padding-top:20px; box-sizing: border-box;}
+.footer h2{color:#fff; font-size:15px; font-weight: bold;  float: left;}
+.footer .sns{float: left;}
+.footer .sns li{float: left; }
+.footer .sns li img{width: 19px; padding:0 6px;}
+.footer .util{float: right;}
+.footer .util li{}
+.footer .util li a{display: block; color:#fff; font-size:12px; background: #121212;; line-height: 16px; text-align: right; margin-bottom: 6px;} 
+.footer p{font-size:10px; color:#fff;}
+
+
+
+  
+   
+    
+
+
+
